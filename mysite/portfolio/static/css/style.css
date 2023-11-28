@@ -112,7 +112,7 @@ button:focus {
 }
 
 .section_gap_top {
-  padding-top: 200px;
+  padding-top: 100px;
 }
 
 @media (max-width: 1199px) {
@@ -122,7 +122,7 @@ button:focus {
 }
 
 .section_gap_bottom {
-  padding-bottom: 200px;
+  padding-bottom: 100px;
 }
 
 @media (max-width: 1199px) {
@@ -472,6 +472,59 @@ button:focus {
   display: -ms-flexbox;
   display: flex;
 }
+
+/* ============================================================================================ */
+
+/* Experience and Education Section */
+
+.timeline-wrapper {
+  position: relative;
+  padding: 22px 0;
+}
+.timeline-wrapper:last-child:before {
+  height: 0;
+}
+.timeline-wrapper:before {
+  content: "";
+  background: #474559;
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  left: 38px;
+}
+
+.timeline-yr {
+  background: #474559;
+  border-radius: 100%;
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  text-align: center;
+}
+.timeline-yr span {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  line-height: 75px;
+}
+
+.timeline-info {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 432px;
+  margin-left: 6em;
+}
+.timeline-info small {
+  color: #474559;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 15px;
+}
+
 
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
@@ -3330,7 +3383,8 @@ h6 {
 /* Start Barand Area css
 ============================================================================================ */
 .brand_area {
-  padding-bottom: 170px;
+  padding-bottom: 80px;
+  margin-top: 50px;
 }
 
 @media (max-width: 1199px) {
@@ -3344,7 +3398,7 @@ h6 {
 /* Start Features Area css
 ============================================================================================ */
 .features_area {
-  padding-bottom: 170px;
+  padding-bottom: 50px;
 }
 
 @media (max-width: 1199px) {
@@ -3363,6 +3417,22 @@ h6 {
   -moz-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
+}
+
+#skills-header #skills-card{
+  margin-right: 20%;
+}
+
+@media only screen and (max-width: 767px) {
+  #skills-header #skills-card{
+    margin-right: 0%;
+  }
+}
+
+@media (max-width: 575px) {
+  #skills-header #skills-card{
+    margin-right: 0%;
+  }
 }
 
 .feature_item img {
@@ -3788,7 +3858,7 @@ h6 {
 }
 
 .testi_item {
-  padding: 50px 55px;
+  /* padding: 50px 55px; */
   margin-bottom: 200px;
   margin-left: 10px;
   margin: 0px 10px 80px;
@@ -4522,8 +4592,7 @@ h6 {
   color: #854fee;
 }
 
+
+
 /* End Footer Area css
 ============================================================================================ */
-/*---------------------------------------------------- */
-
-/*# sourceMappingURL=style.css.map */
