@@ -100,7 +100,9 @@ button:focus {
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 .section_gap {
-  padding: 200px 0;
+  /* padding: 130px 0; */
+  padding-top: 135px;
+  padding-bottom: 50px;
 }
 
 @media (max-width: 1199px) {
@@ -3387,8 +3389,12 @@ h6 {
 /* Start Brand Area css
 ============================================================================================ */
 .single-brand-item {
-  width: 170px;
+  /* width: 170px;
   height: 100px;
+  cursor: pointer; */
+  /* margin-bottom: 30px; */
+  width: 130px;
+  height: 80px;
   cursor: pointer;
   margin-bottom: 30px;
   border: 1px solid #eeeeee;
@@ -3399,10 +3405,29 @@ h6 {
   transition: all 0.4s ease 0s;
 }
 
+#skills-section #skills-header{
+  height: 90%;
+}
+
+#skills-section .skills{
+  width: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+
+}
+
 @media only screen and (max-width: 767px) {
   .single-brand-item {
-    height: 100px;
-    width: 140px;
+    /* height: 60px;
+    width: 110px; */
+    height: 90%;
+    width: 95%;
+  }
+  #skills-section .skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0px;
   }
 }
 
@@ -3418,7 +3443,7 @@ h6 {
 }
 
 .single-brand-item img {
-  max-width: 80px;
+  max-width: 50%;
   margin: 0 auto;
   -webkit-transition: all 0.4s ease 0s;
   -moz-transition: all 0.4s ease 0s;
@@ -3428,7 +3453,7 @@ h6 {
 
 @media only screen and (max-width: 767px) {
   .single-brand-item img {
-    max-width: 100px;
+    max-width: auto;
   }
 }
 
