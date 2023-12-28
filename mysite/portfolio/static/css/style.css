@@ -486,7 +486,7 @@ button:focus {
 }
 .timeline-wrapper:before {
   content: "";
-  background: #474559;
+  background: #4b42a1;
   width: 3px;
   height: 100%;
   position: absolute;
@@ -494,7 +494,7 @@ button:focus {
 }
 
 .timeline-yr {
-  background: #474559;
+  background: #4b42a1;
   border-radius: 100%;
   position: absolute;
   width: 75px;
@@ -3405,6 +3405,14 @@ h6 {
   .features_area {
     padding-bottom: 50px;
   }
+}
+
+.feature_inner{
+  justify-content: center;
+}
+
+.de-link{
+  color: #777777;
 }
 
 .feature_item {

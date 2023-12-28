@@ -1,0 +1,42 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="{% static 'img/icon.png' %}" type="image/png">
+    <title>Priyal's Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'vendors/linericon/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'vendors/owl-carousel/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'vendors/nice-select/css/nice-select.css' %}">
+    <!-- main css -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <style>
+        .snake {
+            width: 100%;
+            height: 900px;
+        }
+    </style>
+</head>
+
+
+{% include "portfolio/navbar.html" %}
+
+<body>
+    {% block content %}
+    <iframe class="snake" src="https://nbviewer.org/github/Priyalsanap/snake-game/blob/main/snakeGame.ipynb"
+        frameborder="0"></iframe>
+
+    {% endblock %}
+</body>
+
+
+{% include "portfolio/footer.html" %}

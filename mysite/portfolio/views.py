@@ -8,3 +8,9 @@ from django.http import HttpResponse
 
 def index(request):
     return render(request, 'portfolio/index.html')
+
+def snake(request):
+    return render(request, 'portfolio/snake.html')
+
+def flashcard(request):
+    return render(request, 'portfolio/flashcard.html')

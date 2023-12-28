@@ -7,8 +7,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="{% static 'img/logo.png' %}" type="image/png">
-    <title>Priyal Portfolio</title>
+    <link rel="icon" href="{% static 'img/icon.png' %}" type="image/png">
+    <title>Priyal's Portfolio</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
     <link rel="stylesheet" href="{% static 'vendors/linericon/style.css' %}">
@@ -22,53 +22,7 @@
 
 <body>
 
-    <!--================ Start Header Area =================-->
-    <header class="header_area">
-        <div class="main_menu">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <a class="navbar-brand logo_h" href="index.html"><img src="{% static 'img/logo.png' %}" alt=""></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-                        <ul class="nav navbar-nav menu_nav justify-content-end">
-                            <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                            <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-                            <li class="nav-item submenu dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
-                                    aria-haspopup="true" aria-expanded="false">Pages</a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="portfolio-details.html">Portfolio
-                                            Details</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item submenu dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
-                                    aria-haspopup="true" aria-expanded="false">Blog</a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
-    <!--================ End Header Area =================-->
+    {% include "portfolio/navbar.html" %}
 
     <!--================ Start Home Banner Area =================-->
     <!-- <section class="home_banner_area">
@@ -111,7 +65,7 @@
 
                 <div class="offset-lg-1 col-lg-5">
                     <div class="main_title text-left">
-                        
+
                         <h2>About Me</h2>
                         <p>
                             Hi there!
@@ -133,24 +87,25 @@
     <!--================ End About Us Area =================-->
 
     <!--================ Start Features Area =================-->
-    
+
     <!-- FEATURES -->
     <section class="resume py-2 d-lg-flex justify-content-center align-items-center" id="resume">
         <div class="container">
             <div class="row">
 
                 <div class="col-lg-6 col-12">
-                  <h2 class="mb-4">Experiences</h2>
+                    <h2 class="mb-4">Experiences</h2>
 
                     <div class="timeline">
                         <div class="timeline-wrapper">
-                             <div class="timeline-yr">
-                                  <span>2022</span>
-                             </div>
-                             <div class="timeline-info">
-                                  <h3><span>Product Manager</span><small>L&T Finance Ltd.</small></h3>
-                                  <p>Proin ornare non purus ut rutrum. Nulla facilisi. Aliquam laoreet libero ac pharetra feugiat. Cras ac fermentum nunc, a faucibus nunc.</p>
-                             </div>
+                            <div class="timeline-yr">
+                                <span>2022</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>Product Manager</span><small>L&T Finance Ltd.</small></h3>
+                                <p>Proin ornare non purus ut rutrum. Nulla facilisi. Aliquam laoreet libero ac pharetra
+                                    feugiat. Cras ac fermentum nunc, a faucibus nunc.</p>
+                            </div>
                         </div>
 
                         <div class="timeline-wrapper">
@@ -159,7 +114,8 @@
                             </div>
                             <div class="timeline-info">
                                 <h3><span>UX Designer</span><small>Digital Ace</small></h3>
-                                <p>Fusce rutrum augue id orci rhoncus molestie. Nunc auctor dignissim lacus vel iaculis.</p>
+                                <p>Fusce rutrum augue id orci rhoncus molestie. Nunc auctor dignissim lacus vel iaculis.
+                                </p>
                             </div>
                         </div>
 
@@ -169,17 +125,20 @@
                             </div>
                             <div class="timeline-info">
                                 <h3><span>UI Freelancer</h3>
-                                <p>Sed fringilla vitae enim sit amet cursus. Sed cursus dictum tortor quis pharetra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                                <p>Sed fringilla vitae enim sit amet cursus. Sed cursus dictum tortor quis pharetra.
+                                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                                    egestas.</p>
                             </div>
                         </div>
-                        
+
                         <div class="timeline-wrapper">
                             <div class="timeline-yr">
                                 <span>2014</span>
                             </div>
                             <div class="timeline-info">
                                 <h3><span>Quantitative Finance Intern<small>Grayquest</small></h3>
-                                <p>Cras scelerisque scelerisque condimentum. Nullam at volutpat mi. Nunc auctor ipsum eget magna consequat viverra.</p>
+                                <p>Cras scelerisque scelerisque condimentum. Nullam at volutpat mi. Nunc auctor ipsum
+                                    eget magna consequat viverra.</p>
                             </div>
                         </div>
 
@@ -187,17 +146,18 @@
                 </div>
 
                 <div class="col-lg-6 col-12">
-                  <h2 class="mb-4 mobile-mt-2">Educations</h2>
+                    <h2 class="mb-4 mobile-mt-2">Educations</h2>
 
                     <div class="timeline">
                         <div class="timeline-wrapper">
-                             <div class="timeline-yr">
-                                  <span>2017</span>
-                             </div>
-                             <div class="timeline-info">
-                                  <h3><span>Mobile Web</span><small>Master Design</small></h3>
-                                  <p>Please tell your friends about Tooplate website. That would be very helpful. We need your support.</p>
-                             </div>
+                            <div class="timeline-yr">
+                                <span>2017</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>Mobile Web</span><small>Master Design</small></h3>
+                                <p>Please tell your friends about Tooplate website. That would be very helpful. We need
+                                    your support.</p>
+                            </div>
                         </div>
 
                         <div class="timeline-wrapper">
@@ -206,23 +166,25 @@
                             </div>
                             <div class="timeline-info">
                                 <h3><span>User Interfaces</span><small>Creative Agency</small></h3>
-                                <p><a rel="nofollow" href="https://www.facebook.com/tooplate">Tooplate</a> is a great website to download HTML templates without any login or email.</p>
+                                <p><a rel="nofollow" href="https://www.facebook.com/tooplate">Tooplate</a> is a great
+                                    website to download HTML templates without any login or email.</p>
                             </div>
                         </div>
-                        
+
                         <div class="timeline-wrapper">
                             <div class="timeline-yr">
                                 <span>2013</span>
                             </div>
                             <div class="timeline-info">
                                 <h3><span>Artwork Design</span><small>New Art School</small></h3>
-                                <p>You can freely use Tooplate's templates for your business or personal sites. You cannot redistribute this template without a permission.</p>
+                                <p>You can freely use Tooplate's templates for your business or personal sites. You
+                                    cannot redistribute this template without a permission.</p>
                             </div>
                         </div>
 
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </section>
@@ -235,12 +197,13 @@
             <div class="row justify-content-center" id="skills-section">
                 <div class="offset-lg--1 col-lg-5 col-md6">
                     <div class="row feature_inner">
-                        
+
                         <div id="skills-header">
                             <div class="feature_item" id="skills-card">
                                 <img src="{% static 'img/services/code.png' %}" alt="">
                                 <h4>My Skills</h4>
-                                <p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
+                                <p>Creeping for female light years that lesser can't evening heaven isn't bearing tree
+                                </p>
                             </div>
                         </div>
 
@@ -252,69 +215,69 @@
                         <div class="col-lg-4 col-md-4 col-sm-6">
                             <div class="single-brand-item d-table">
                                 <div class="d-table-cell text-center">
-                                    <img src="{% static 'img/brands/python.png' %}" alt="">
+                                    <img src="{% static 'img/skills/python.png' %}" alt="">
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-6">
                             <div class="single-brand-item d-table">
                                 <div class="d-table-cell text-center">
-                                    <img src="{% static 'img/brands/sql.png' %}" alt="">
+                                    <img src="{% static 'img/skills/sql.png' %}" alt="">
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-6">
                             <div class="single-brand-item d-table">
                                 <div class="d-table-cell text-center">
-                                    <img src="{% static 'img/brands/tableau.png' %}" alt="">
+                                    <img src="{% static 'img/skills/tableau.png' %}" alt="">
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-6">
                             <div class="single-brand-item d-table">
                                 <div class="d-table-cell text-center">
-                                    <img src="{% static 'img/brands/powerBi.png' %}" alt="">
+                                    <img src="{% static 'img/skills/powerBi.png' %}" alt="">
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-6">
                             <div class="single-brand-item d-table">
                                 <div class="d-table-cell text-center">
-                                    <img src="{% static 'img/brands/js.png' %}" alt="">
+                                    <img src="{% static 'img/skills/js.png' %}" alt="">
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-6">
                             <div class="single-brand-item d-table">
                                 <div class="d-table-cell text-center">
-                                    <img src="{% static 'img/brands/aws.png' %}" alt="">
+                                    <img src="{% static 'img/skills/aws.png' %}" alt="">
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-6">
                             <div class="single-brand-item d-table">
                                 <div class="d-table-cell text-center">
-                                    <img src="{% static 'img/brands/html.png' %}" alt="">
+                                    <img src="{% static 'img/skills/html.png' %}" alt="">
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-6">
                             <div class="single-brand-item d-table">
                                 <div class="d-table-cell text-center">
-                                    <img src="{% static 'img/brands/css.png' %}" alt="">
+                                    <img src="{% static 'img/skills/css.png' %}" alt="">
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-6">
                             <div class="single-brand-item d-table">
                                 <div class="d-table-cell text-center">
-                                    <img src="{% static 'img/brands/R.png' %}" alt="">
+                                    <img src="{% static 'img/skills/R.png' %}" alt="">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
 
@@ -326,11 +289,11 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
-                    <div class="main_title">
-                        <h2>service offers </h2>
+                    <div class="main_title" id="projects-section">
+                        <h2>My Projects</h2>
                         <p>
-                            Is give may shall likeness made yielding spirit a itself togeth created
-                            after sea <br> is in beast beginning signs open god you're gathering ithe
+                            Below is a list of projects I completed during complete Python bootcamp course. <br> I have
+                            also included some of my personal projects.
                         </p>
                     </div>
                 </div>
@@ -338,32 +301,48 @@
             <div class="row feature_inner">
                 <div class="col-lg-3 col-md-6">
                     <div class="feature_item">
-                        <img src="{% static 'img/services/s1.png' %}" alt="">
-                        <h4>Wp developing</h4>
-                        <p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
+                        <a href="{% url 'flashcard' %}">
+                            <img src="{% static 'img/services/flashcard.png' %}" alt="">
+                            <h5>Flashcard App</h5>
+                            <p class="de-link">This is a simple app to help anyone learn Spanish. It is a simple flash
+                                card
+                                app that shows a Spanish word and the user has to guess the English translation.
+                            </p>
+                        </a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="feature_item">
-                        <img src="{% static 'img/services/s2.png' %}" alt="">
-                        <h4>UI/ux design</h4>
-                        <p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
+                        <a href="https://github.com/Priyalsanap/snake-game/tree/main">
+                            <img src="{% static 'img/services/markov.png' %}" alt="">
+                            <h5>Generate Text using Markov Chains</h5>
+                            <p class="de-link">In this app, the Markov chain is used to build transition probabilities
+                                of next words.
+                                The Markov model is then used to generate text based on the input words.</p>
+                        </a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="feature_item">
-                        <img src="{% static 'img/services/s3.png' %}" alt="">
-                        <h4>Web design</h4>
-                        <p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
+                        <a href="{% url 'snake' %}">
+
+                            <img src="{% static 'img/services/snake.png' %}" alt="">
+                            <h5>Snake Game</h5>
+                            <p class="de-link">The objective of the game is to feed the snake with food that randomly
+                                appears on the screen.
+                                The game ends when the snake either collides with the wall or with itself.</p>
+                        </a>
+
+
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <!-- <div class="col-lg-3 col-md-6">
                     <div class="feature_item">
                         <img src="{% static 'img/services/s4.png' %}" alt="">
                         <h4>seo optimize</h4>
                         <p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -560,7 +539,8 @@
                         <h2>Testimonial</h2>
                         <p>Is give may shall likeness made yielding spirit a itself togeth created after sea is in beast
                             <br>
-                            beginning signs open god you're gathering ithe</p>
+                            beginning signs open god you're gathering ithe
+                        </p>
                     </div>
                 </div>
             </div>
@@ -687,58 +667,7 @@
     </section> -->
     <!--================ End Newsletter Area =================-->
 
-    <!--================Footer Area =================-->
-    <footer class="footer_area">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-12">
-                    <div class="footer_top flex-column">
-                        <div class="footer_logo">
-                            <a href="#">
-                                <img src="{% static 'img/logo.png' %}" alt="">
-                            </a>
-                            <h4>Follow Me</h4>
-                        </div>
-                        <div class="footer_social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-dribbble"></i></a>
-                            <a href="#"><i class="fa fa-behance"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row footer_bottom justify-content-center">
-                <p class="col-lg-8 col-sm-12 footer-text">
-                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    Copyright &copy;
-<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is significantly
-modified from the original made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com"
-    target="_blank">Colorlib</a>
-                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                </p>
-            </div>
-        </div>
-    </footer>
-    <!--================End Footer Area =================-->
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
-    <script src="{% static 'js/popper.js' %}"></script>
-    <script src="{% static 'js/bootstrap.min.js' %}"></script>
-    <script src="{% static 'js/stellar.js' %}"></script>
-    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
-    <script src="{% static 'vendors/nice-select/js/jquery.nice-select.min.js' %}"></script>
-    <script src="{% static 'vendors/isotope/imagesloaded.pkgd.min.js' %}"></script>
-    <script src="{% static 'vendors/isotope/isotope-min.js' %}"></script>
-    <script src="{% static 'vendors/owl-carousel/owl.carousel.min.js' %}"></script>
-    <script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
-    <script src="{% static 'js/mail-script.js' %}"></script>
-    <!--gmaps Js-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-    <script src="{% static 'js/gmaps.min.js' %}"></script>
-    <script src="{% static 'js/theme.js' %}"></script>
+    {% include "portfolio/footer.html" %}
 </body>
 
 </html>
