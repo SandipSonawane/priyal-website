@@ -97,6 +97,11 @@ button:focus {
   margin-top: 50px;
 }
 
+.btn-primary {
+  background-color: #854fee;
+  border-color: #854fee;
+}
+
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 .section_gap {
@@ -3418,7 +3423,7 @@ h6 {
 .feature_item {
   padding: 45px 25px;
   text-align: center;
-  background: #f9f9fd;
+  background: aliceblue;
   cursor: pointer;
   margin-bottom: 30px;
   -webkit-transition: all 0.4s ease 0s;
@@ -3471,7 +3476,8 @@ h6 {
   height: 100px;
   cursor: pointer; */
   /* margin-bottom: 30px; */
-  width: 130px;
+  background-color: aliceblue;
+  width: 150px;
   height: 80px;
   cursor: pointer;
   margin-bottom: 30px;
@@ -3645,7 +3651,7 @@ h6 {
 /* Start Portfolio Area css
 ============================================================================================ */
 .portfolio_area {
-  padding-bottom: 120px;
+  padding-bottom: 0px;
 }
 
 @media (max-width: 991px) {
@@ -3663,6 +3669,15 @@ h6 {
   .portfolio_area .filters ul {
     margin-bottom: 20px;
   }
+
+  .portfolio_area .filters ul li {
+    margin-bottom: 10px;
+  }
+
+  .portfolio_area .filters ul li.active {
+    color: #854fee;
+  }
+  
 }
 
 .portfolio_area .filters ul li {
@@ -3825,6 +3840,10 @@ h6 {
 
 .portfolio_details_inner .portfolio_right_text .list li i {
   color: #f1cd09;
+}
+
+.hidden_language {
+  display: none;
 }
 
 /* End Portfolio Area css
@@ -4604,3 +4623,113 @@ h6 {
 
 /* End Footer Area css
 ============================================================================================ */
+
+
+
+
+.social {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.list-inline > li {
+  width: 2em;
+  flex: none;
+  margin-right: 1em;
+}
+
+.profile-image {
+  width: 15%;
+  border-radius: 25px;
+}
+
+.about > div {
+  background-color: #3c3c3c;
+}
+
+.project-image {
+  width: 80%;
+  padding: 0px;
+}
+
+.item.sub-apps{
+  display: grid;
+  grid-template-columns: 2.5fr 5fr;
+}
+
+.sub-app-img-section .sub-app-btn{
+  margin-top: 20px;
+  justify-self: center;
+}
+
+
+
+
+.header .profile-content .name {
+  color: #49515a;
+  font-size: 32px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.header .profile-content .desc {
+  color: #778492;
+  font-family: "Lato", arial, sans-serif;
+  font-weight: 400;
+  /* font-size: 24px; */
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.header .profile-content .social a {
+  background: #b0b7bf;
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  color: #fff;
+  text-align: center;
+  align-content: center;
+}
+
+.header .profile-content .social a:hover {
+  background: #778492;
+}
+
+.header .profile-content .social a .fa {
+  font-size: 20px;
+  padding-top: 8px;
+}
+
+
+/* divider width adjustment */
+.divider{
+  width: 70%;
+}
+
+@media (max-width: 576px) {
+  .divider{
+    width: 90%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .divider{
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+  .divider{
+    width: 90%;
+  }
+}
